@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            <%=title %>
+        </title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <form>
+            <input type = "text" name = "item" placeholder = "input task">
+            <input type="date" name="date" placeholder="enter due date..">
+            <select name = "category">
+                <option value="work">WORK</option>
+                <option value="personal">PERSONAL</option>
+            </select>
+            <input type="submit" value="Add Task">
+        </form>
+        <!--
+        <div class = "todo-list-container">
+            <ul>
+                <%for (let i of todoItems){%>
+                    <li class = "item">
+                        <p><%=i.item%></p>
+                        <p><%=i.category%></p>
+                        <p><%=i.date%></p>
+                        <div class ="delete-button">
+                            <a href = "/delete-item/?id=<%=i._id%>">
+                            <i class = "fas fa-window-close"></i></a>
+                        </div>
+                    </li>  
+                <%}%>
+            </ul>
+        </div>
+    -->
+    </body>
+</html>
