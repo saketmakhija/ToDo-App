@@ -1,5 +1,5 @@
-const momgoose = require('mongoose');
-momgoose.connect('mongodb://localhost/todo_app');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/todo_app', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection;
 

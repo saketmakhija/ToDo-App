@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    text-align: center;
+    color: lightblue;
+    background-color: whitesmoke;
+}
+
+.item{
+    padding:50px;
+    
+}
+
+.date-category{
+    padding: 50px;
+}
+
+.submit{
+    color:lightblue;
+    background-color: blue;
+}
+
+
+
+.todo-list-container li p{
+    color:black;
+    display:inline;
+    
+    
+}

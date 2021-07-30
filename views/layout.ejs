@@ -2,22 +2,31 @@
     <head>
         <title>
             <%=title %>
+
         </title>
+        <link rel="stylesheet" href="/css/layout.css">
+        <script src="https://kit.fontawesome.com/8e6acf52e0.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
 
         </header>
-        <form>
-            <input type = "text" name = "item" placeholder = "input task">
-            <input type="date" name="date" placeholder="enter due date..">
-            <select name = "category">
-                <option value="work">WORK</option>
-                <option value="personal">PERSONAL</option>
-            </select>
-            <input type="submit" value="Add Task">
-        </form>
-        <!--
+        <div class = "todo-form">
+            <form action="/create-planner" method = "POST">
+                <div class = item>
+                <input type = "text" name = "item" placeholder = "input task">
+                </div>
+                <div class = "date-category">
+                <input type="date" name="date" placeholder="enter due date..">
+                <select name = "category">
+                    <option value="work">WORK</option>
+                    <option value="personal">PERSONAL</option>
+                </select>
+                </div>
+                <button type="submit" class = "submit">Add to Planner</button>
+            </form>
+        </div>
+        
         <div class = "todo-list-container">
             <ul>
                 <%for (let i of todoItems){%>
@@ -33,6 +42,7 @@
                 <%}%>
             </ul>
         </div>
-    -->
+    
+        
     </body>
 </html>
