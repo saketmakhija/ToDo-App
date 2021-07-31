@@ -23,20 +23,22 @@
                     <option value="personal">PERSONAL</option>
                 </select>
                 </div>
-                <button type="submit" class = "submit">Add to Planner</button>
+                <div class = "button-submit">
+                <button type="submit" class = "submit"><i class = "fas fa-plus"></i>Add to Planner</button>
+            </div>
             </form>
         </div>
         
         <div class = "todo-list-container">
             <ul>
                 <%for (let i of todoItems){%>
-                    <li class = "item">
+                    <li class = "list">
                         <p><%=i.item%></p>
                         <p><%=i.category%></p>
                         <p><%=i.date%></p>
-                        <div class ="delete-button">
+                        <div class = "delete-button">
                             <a href = "/delete-item/?id=<%=i._id%>">
-                            <i class = "fas fa-window-close"></i></a>
+                            <i class = "fas fa-check"></i></a>
                         </div>
                     </li>  
                 <%}%>

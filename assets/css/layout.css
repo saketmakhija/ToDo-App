@@ -7,17 +7,17 @@ body{
 
 .item{
     padding:50px;
-    
+    border-radius: 4px;
+    font-family: sans-serif;
 }
 
 .date-category{
     padding: 50px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    justify-content: space-evenly;
 }
 
-.submit{
-    color:lightblue;
-    background-color: blue;
-}
 
 
 
@@ -26,4 +26,51 @@ body{
     display:inline;
     
     
+}
+
+.todo-list-container ul{
+    padding:0;
+    list-style: none;
+    
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 90%;
+    margin-left: 80px;
+    margin-right: 150px;
+}
+
+.todo-list-container ul li{
+    border: lightblue 1px solid;
+    
+}
+
+.submit{
+    size: 50px;
+    align-self: center;
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 4px;
+  background-color: rgba(10, 184, 247, 0.664);
+  justify-content: space-between;
+}
+
+a{
+    color: rgb(70, 112, 7);
+}
+
+.delete-button{
+    background-color:lightgreen;
+    margin-bottom: auto;
+    border-radius: 6px;
+    margin-top: 15px;
 }
