@@ -1,9 +1,9 @@
+//This is entry point of every request made 
 const express = require('express');
 const app = express();
 const port = 8000;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
-//const Item = require('../models/item');
 app.use(express.urlencoded());
 app.use(express.static('./assets'));
 app.set('view engine', 'ejs');

@@ -34,6 +34,7 @@ body{
     
 }
 
+/* Adding style to list of tasks*/
 .list{
     display: flex;
     flex-direction: row;
@@ -49,6 +50,7 @@ body{
     
 }
 
+/*Stying the Add to Planner button*/
 .submit{
     size: 50px;
     align-self: center;
